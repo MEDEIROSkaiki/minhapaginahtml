@@ -1,77 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina teste</title>
+    <style>
+        form {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3b3b3b75;
+            border-radius: 30;
+            
+            /* Cor de fundo da tela de login*/
+        }
+
+        body {
+            background-color: #333;
+            /* Cor de fundo escura */
+            color: #f00505;
+            /* Cor do texto branca */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /*Estilizando cabeçalhos*/
+        h1 {
+            font-size: xx-large;
+            color: black;
+        }
+
+        h2 {
+            font-size: x-large;
+            color: #3f3f3f;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: medium;
+            color: #5f5e5e;
+            text-align: center;
+            /*estilizando tela de login*/
+        }
+
+        form {
+            margin-bottom: 20px;
+            padding: 50px;
+            border: 10px solid #ccc;
+            border-radius: 40px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a{
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 5;
+            background-color: #3b3b3b75;
+        }
+    </style>
+
+
+
 </head>
+
 <body>
-   <h1>Tela de login</h1>
-<h2>LOGIN</h2>  
-<!-- Tela de login -->
-<div class="login-container">
-<form>
-    <input type="text" id="usename" name="username" placeholder="Usuário" required><br>
-    <input type="password" id="password" name="password" placeholder="Senha" required><br>
-    <button type="submit">Entrar</button>
-</form>
-<br><br><br><br><br><br><br>
-<!-- Video -->
-<h3>O que é login</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6qMqGB4RGiU?si=LTIcybhrpRZqWfgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
-<!-- Link -->
-<a href="https://www.hardware.com.br/tutoriais/o-que-e-login-quais-tipos-existem/">Tipo de login</a>
-<!--Estilização fundo-->
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* Cor de fundo da tela de login*/
-}
+    <h1>Tela de login</h1>
+    <h2>LOGIN</h2>
+    <!-- Tela de login -->
+    <div class="login-container">
+        <form id="myForm">
+            <input type="text" id="usename" name="username" placeholder="Usuário" required><br>
+            <input type="password" id="password" name="password" placeholder="Senha" required><br><br>
+            <button type="submit">Entrar</button>
+        </form>
+        <br><br>
+        <!-- Video -->
+        <h3>O que é login</h3>
+        <p>Login é um termo em inglês que significa "se conectar" ou "logging in". É um processo de autenticação que
+            permite que um usuário acesse um sistema, plataforma ou conta online.
 
-form {
-    background-color: #333; /* Cor de fundo escura */
-    color: #f00505; /* Cor do texto branca */
-    padding: 20px;
-    text-align: center;
-}
-/*Estilizando cabeçalhos*/
-h1{
-  font-size: xx-large;
-  color: black;
-}
-h2{
-font-size: x-large;
-color: #3f3f3f;
-}
-h3{
-    font-size: medium;
-    color: #5f5e5e;
-}
-form{
-    margin-bottom: 20px;
-    padding: 50px;
-    border: 10px solid #ccc;
-    border-radius: 40px;
-}
+            O login é uma etapa fundamental para garantir a segurança e privacidade das informações pessoais, pois
+            impede que dados importantes sejam roubados.
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+            O login geralmente envolve o fornecimento de um nome de usuário e uma senha, mas pode variar dependendo do
+            sistema ou plataforma. Por exemplo, alguns sistemas solicitam identificação biométrica com impressão
+            digital, voz ou reconhecimento facial.
 
+            O recurso "Fazer login com o Google" permite que o usuário faça login em apps ou serviços de terceiros
+            usando sua Conta do Google.
+        </p>
 
-button:hover {
-    background-color: #b1b1b1;
-}
-</style>
-</div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6qMqGB4RGiU?si=LTIcybhrpRZqWfgj"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        </div><br><br>
+        <!-- Link -->
+        <a href="https://www.hardware.com.br/tutoriais/o-que-e-login-quais-tipos-existem/">Tipo de login</a><br><br>
 
+        <form>
+            <select>
+    >
+                <option value="Nome usuário e senha">Nome usuário e senha </option>
+                <option value="Endereço de E-mail e senha">Endereço de E-mail e senha</option>
+                <option value="Documento e senha">Documento e senha</option>
+                <option value="Imoressão digital">Impressão digital</option>
+                <option value="Reconhecimento facial">Reconhecimento facial</option>
+                <option value="Verificação em duas etapas">Verificação em duas etapas</option>
+        
+            </select>
+        </form>
 
 </body>
+
 </html>
+
+
+
