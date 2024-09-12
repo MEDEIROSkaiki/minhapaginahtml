@@ -1,5 +1,4 @@
-head
-<style>
+
         form {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -23,6 +22,7 @@ head
         h1 {
             font-size: xx-large;
             color: rgb(184, 184, 184);
+            text-align: justify;
         }
 
         h2 {
@@ -43,13 +43,14 @@ head
             padding: 50px;
             border: 10px solid #b9b5b5;
             border-radius: 40px;
+            
         }
 
         button {
             background-color: #007bff;
             color: #fff;
             border: none;
-            padding: 5px 10px;
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -62,4 +63,18 @@ head
             border-radius: 5px;
         }
 
-    </style>
+       input{
+        background-color: #bfbfbf;
+        color: #fff;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+       }
+
+        .login-container{
+           
+           display: flex;
+           justify-content: center;
+          
+        }
